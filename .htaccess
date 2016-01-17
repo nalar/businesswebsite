@@ -1,0 +1,4 @@
+RewriteEngine On				# Enable the Rewrite engine
+RewriteRule /gallery/ ./gallery.html		# Rewrite gallery url
+RewriteRule /contact/ ./contact.html		# Rewrite contact url
+RewriteRule /about/ ./about.html		# Rewrite about url
