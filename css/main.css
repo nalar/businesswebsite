@@ -30,6 +30,7 @@
 }
 
 .quote{
+	font-size: 10pt;
 	font-style: italic;
 	font-family: sans-serif;
 	word-wrap: normal;
