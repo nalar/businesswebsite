@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    
+    setInterval( "slideSwitch()", 3000 );
+
     $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
         $("#coverdiv").css("display","block");              // Open opacity div
         $("#productbox1").css("display","block")            // Display the infobox
@@ -28,11 +29,6 @@ function slideSwitch() {
             $active.removeClass('active last-active');
         });
 }
-
-$(function() {
-    setInterval( "slideSwitch()", 3000 );
-});
-
 
 function showDetails(){
     // This function will open an information window showing

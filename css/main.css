@@ -1,29 +1,29 @@
-body{
-  min-width: 100%;
-}
-
 /* Main Slider*/
 #mainLanding {
   top:0;
   left: 0;
   width: 100%;
 }
+
 #mainSlider {
   top:0;
   left: 0;
   position:relative;
 }
+
 #mainSlider img {
   position:absolute;
   top:0;
   left:0;
-  z-index:-10;
   width: 100%;
+  z-index:-10;
 }
-#mainSlider IMG.active {
+
+#mainSlider img.active {
   z-index:-8;
 }
-#mainSlider IMG.last-active {
+
+#mainSlider img.last-active {
   z-index:-9;
 }
 
