@@ -1,0 +1,48 @@
+div#header{
+  background: #999966;
+  overflow:auto;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+ }
+div#mainmenu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    border: 20px solid;
+    background-color: blue;
+    float:right;
+}
+nav {
+	list-style-type: none;
+    margin-top: 30px;
+    overflow: hidden;
+   	height:80px;
+   	float: right;
+}
+nav li {
+	float:left;
+}
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font: sans-serif;
+    font-style: bold;
+}
+nav a:hover:not(.active) {
+	color: blue;
+}
+nav li a.active {background-color: #4CAF50;}
+
+.logo {
+	display: inline;
+	width:150px;
+	height:80px;
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
