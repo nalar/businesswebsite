@@ -1,17 +1,16 @@
-    // This function will slowly fade the images on the 
-    // landing page in to each other
-// function fadeHome(){
-//     var $active = $('#mainSlider IMG.active');
-//     var $next = $active.next();    
+$(document).ready(function() {
     
-//     $next.addClass('active');
-    
-//     $active.removeClass('active');
-// }
+    $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
+        $("#coverdiv").css("display","block");              // Open opacity div
+        $("#productbox1").css("display","block")            // Display the infobox
+    });
 
-// $(function() {
-//     setInterval( "slideSwitch()", 5000 );
-// });
+    $("#productbox1").click(function(){                     // Clicked the photo so open the matching info box
+        $("#coverdiv").css("display","none");               // Open opacity div
+        $("#productbox1").css("display","none")             // Display the infobox
+    });
+
+});
 
 function slideSwitch() {
     var $active = $('#mainSlider IMG.active');
@@ -31,10 +30,8 @@ function slideSwitch() {
 }
 
 $(function() {
-    setInterval( "slideSwitch()", 5000 );
+    setInterval( "slideSwitch()", 3000 );
 });
-
-//--------------
 
 
 function showDetails(){
