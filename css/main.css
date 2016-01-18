@@ -16,8 +16,31 @@
     z-index:9;
 }
 
+/* Product design*/
+#mainProducts {
+  position: absolute;
+  top: 150px;
+}
+
+.productphoto {
+  float: left;
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.productphoto img{
+  height: 500px;
+  width: 350px;
+}
+
+.productbox {
+  display: none;
+}
+
 /* Header design */
 #header {
+  z-index: 100;
   background: #999966;
   overflow:auto;
   position: fixed;
@@ -76,6 +99,7 @@ nav li a.active {
 
 /* Footer design */
 #footer {
+  z-index: 100;
   padding-top: 10px;
   padding-left: 10px;
   background-color: #A3BBCA;

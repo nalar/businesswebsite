@@ -1,11 +1,16 @@
+$(document).ready(function() {
+
+}
+
 function fadeHome(){
 	// This function will slowly fade the images on the 
 	// landing page in to each other
 };
 
-function showDetails(){
+function showBox(){
 	// This function will open an information window showing
 	// the details of the clicked object (product or person)
+	
 }
 
 function sendMail(){
