@@ -1,6 +1,6 @@
 $(document).ready(function() {
-
-}
+	$("#header").addClass("fadeOut");
+};
 
 function fadeHome(){
 	// This function will slowly fade the images on the 
@@ -10,7 +10,7 @@ function fadeHome(){
 function showBox(){
 	// This function will open an information window showing
 	// the details of the clicked object (product or person)
-	
+
 }
 
 function sendMail(){
