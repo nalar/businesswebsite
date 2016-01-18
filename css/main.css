@@ -1,0 +1,44 @@
+/* Footer design */
+#footer {
+	display: block;
+	background-color: #A3BBCA;
+	position: fixed;
+	min-width: 100%;
+	height: 150px;
+	top: 70%;
+	float: left;
+}
+
+#socialmedia{
+	display: block;
+	float: left;
+}
+
+
+#customerquotes{
+	display: block;
+	float: left;
+}
+
+.customerquote{
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 300px;
+	height: 150px;
+	float: left;
+}
+
+.quote{
+	font-style: italic;
+	font-family: sans-serif;
+	word-wrap: normal;
+	text-align: justify;
+}
+
+.customername{
+	text-align: right;
+	font-style: bold;
+	font-size: 14pt;
+	font-family: sans-serif;
+}
