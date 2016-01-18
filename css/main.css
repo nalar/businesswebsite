@@ -1,42 +1,69 @@
-div#header{
+/* Main Slider*/
+#mainSlider {
+    position:relative;
+    width:100%;
+}
+#mainSlider IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+#mainSlider IMG.active {
+    z-index:10;
+}
+#mainSlider IMG.last-active {
+    z-index:9;
+}
+
+/* Header design */
+#header {
   background: #999966;
   overflow:auto;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
- }
-div#mainmenu{
+}
+
+#mainmenu {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-    border: 20px solid;
-    background-color: blue;
-    float:right;
+  border: 20px solid;
+  background-color: blue;
+  float:right;
 }
+
 nav {
 	list-style-type: none;
-    margin-top: 30px;
-    overflow: hidden;
-   	height:80px;
-   	float: right;
+  margin-top: 30px;
+  overflow: hidden;
+  height:80px;
+  float: right;
 }
+
 nav li {
 	float:left;
 }
+
 nav li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    font: sans-serif;
-    font-style: bold;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font: sans-serif;
+  font-style: bold;
 }
+
 nav a:hover:not(.active) {
 	color: blue;
 }
-nav li a.active {background-color: #4CAF50;}
+
+nav li a.active {
+  background-color: #4CAF50;
+}
 
 .logo {
 	display: inline;
@@ -45,4 +72,60 @@ nav li a.active {background-color: #4CAF50;}
 	margin-top: 15px;
 	margin-left: 15px;
 	float: left;
+}
+
+/* Footer design */
+#footer {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #A3BBCA;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  display: block;
+  float: left;
+}
+
+.socialmedia{
+  display: block;
+  float: left;
+  width: 300px;
+  height: 100px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.socialmedia a img{
+  height: 75px;
+  display: block;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.customerquote{
+  vertical-align: middle;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 300px;
+  height: 100px;
+  float: left;
+}
+
+.quote{
+  font-size: 10pt;
+  font-style: italic;
+  font-family: sans-serif;
+  word-wrap: normal;
+  text-align: justify;
+}
+
+.customername{
+  text-align: right;
+  font-style: bold;
+  font-size: 14pt;
+  font-family: sans-serif;
 }
