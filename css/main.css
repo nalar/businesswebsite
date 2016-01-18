@@ -1,7 +1,3 @@
-body{
-  min-width: 100%;
-}
-
 /* Main Slider*/
 #mainLanding {
   top:0;
@@ -9,22 +5,17 @@ body{
   width: 100%;
 }
 #mainSlider {
+  position:absolute;
+  background-image: url("../images/mainslider/1.jpg");
+  background-size: cover;
   top:0;
   left: 0;
-  position:relative;
-}
-#mainSlider img {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:-10;
   width: 100%;
+  height: 100%;
 }
-#mainSlider IMG.active {
-  z-index:-8;
-}
-#mainSlider IMG.last-active {
-  z-index:-9;
+
+#mainSlider img{
+  display: none;
 }
 
 /* Product design*/
@@ -152,8 +143,8 @@ nav li a.active {
 #footer {
   z-index: 100;
   padding-top: 10px;
-  padding-left: 10px;
-  background-color: #A3BBCA;
+  padding-right: 30px;
+  background-color: #999966;
   position: fixed;
   width: 100%;
   left: 0;
@@ -169,7 +160,6 @@ nav li a.active {
   width: 300px;
   height: 100px;
   padding-left: 50px;
-  text-align: center;
 }
 
 .socialmedia a img{
@@ -187,14 +177,13 @@ nav li a.active {
   margin-right: 15px;
   width: 300px;
   height: 100px;
-  float: left;
+  float: right;
 }
 
 .quote{
   font-size: 10pt;
   font-style: italic;
   font-family: sans-serif;
-  word-wrap: normal;
   text-align: justify;
 }
 

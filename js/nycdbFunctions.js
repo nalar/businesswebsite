@@ -1,4 +1,11 @@
+var activeSlide = 0;
+
 $(document).ready(function() {
+
+    sliderImages = [
+    "./images/mainslider/1.jpg",
+    "./images/mainslider/2.jpg",
+    "./images/mainslider/3.jpg"];
     
     $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
         $("#coverdiv").css("display","block");              // Open opacity div
@@ -10,28 +17,30 @@ $(document).ready(function() {
         $("#productbox1").css("display","none")             // Display the infobox
     });
 
+    setInterval( "mainSlide()", 5000 );
+
 });
 
-function slideSwitch() {
-    var $active = $('#mainSlider IMG.active');
-
-    if ( $active.length == 0 ) $active = $('#mainSlider IMG:last');
-
-    var $next =  $active.next().length ? $active.next()
-        : $('#mainSlider IMG:first');
-
-    $active.addClass('last-active');
-        
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 1000, function() {
-            $active.removeClass('active last-active');
+function mainSlide(){
+    console.log("Mainslide called");
+    if(activeSlide === sliderImages.length-1){
+        console.log("Last slide so reset to first");
+        activeSlide = 0; 
+        $("#mainSlider").animate({opacity: 0.25}, 1000, function() {
+            $("#mainSlider").css("background-image","url("+sliderImages[activeSlide]+")");
+            return($("#mainSlider").animate({opacity: 1.0}, 1000, function() {}));
         });
-}
 
-$(function() {
-    setInterval( "slideSwitch()", 3000 );
-});
+    } else{
+        console.log("time for the next slide");
+        activeSlide++
+        $("#mainSlider").animate({opacity: 0.25}, 1000, function() {
+            $("#mainSlider").css("background-image","url("+sliderImages[activeSlide]+")");
+            return($("#mainSlider").animate({opacity: 1.0}, 1000, function() {}));
+        });
+
+    }
+}
 
 
 function showDetails(){
