@@ -1,3 +1,7 @@
+body{
+  min-width: 100%;
+}
+
 /* Main Slider*/
 #mainLanding {
   top:0;
@@ -10,21 +14,84 @@
   position:relative;
 }
 #mainSlider img {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-10;
-    width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-10;
+  width: 100%;
 }
 #mainSlider IMG.active {
-    z-index:-8;
+  z-index:-8;
 }
 #mainSlider IMG.last-active {
-    z-index:-9;
+  z-index:-9;
+}
+
+/* Product design*/
+#coverdiv {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 111;
+  background-color: rgba(0,0,0,0.75);
+};
+
+#mainProducts {
+  position: fixed;
+  min-width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  margin-left: -10px;
+  background-color: #E4E6E6;
+}
+
+.productphoto {
+  float: left;
+  display: block;
+  margin: 200px 30px 30px 30px;
+}
+
+.productphoto img{
+  height: 400px;
+  width: 280px;
+}
+
+.productbox {
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 650px;
+  height: 391px;
+  z-index: 112;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.productboxphoto {
+  display: block;
+  float: left;
+}
+
+.productboxphoto img{
+  width: 300px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.productdescription {
+  width: 300px;
+  float: left; 
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 /* Header design */
 #header {
+  z-index: 100;
   background: #999966;
   overflow:auto;
   position: fixed;
@@ -83,6 +150,7 @@ nav li a.active {
 
 /* Footer design */
 #footer {
+  z-index: 100;
   padding-top: 10px;
   padding-left: 10px;
   background-color: #A3BBCA;
