@@ -1,384 +1,507 @@
-body{
-  margin: 0 0 0 0;
+body
+{
+    margin: 0 0 0 0;
+}
+
+/* Header design */
+#header
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    float: left;
+    overflow: auto;
+
+    width: 100%;
+
+    outline-width: 1px;
+    outline-style: solid;
+    background: #996;
+
+    outline-bottom-color: #717344;
+}
+
+#mainmenu
+{
+    float: right;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    border: 20px solid;
+    background-color: blue;
+}
+
+nav
+{
+    float: right;
+    overflow: hidden;
+
+    height: 80px;
+    margin-top: 30px;
+
+    list-style-type: none;
+}
+
+nav li
+{
+    float: left;
+}
+
+nav li a
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+    font-style: bold;
+
+    display: inline-block;
+
+    padding: 14px 16px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+}
+
+nav a:hover:not(.active)
+{
+    color: gray;
+}
+
+nav li a.active
+{
+    background-color: #4caf50;
+}
+
+.logo
+{
+    display: inline;
+    float: left;
+
+    width: 150px;
+    height: 80px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 /* Main Slider*/
-#mainLanding {
-  width: 100%;
+#mainLanding
+{
+    width: 100%;
 }
 
-#mainSlider {
-  top:0;
-  left: 0;
-  position:relative;
-  height:100%;
+#mainSlider
+{
+    position: relative;
+    top: 110;
+    left: 0;
+
+    height: 100%;
 }
 
-#mainSlider img {
-  position:absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  z-index: -10;
+#mainSlider img
+{
+    position: absolute;
+    z-index: -10;
+    top: 110;
+    left: 0;
+
+    width: 100%;
 }
 
-#mainSlider img.active {
-  z-index: -9;
+#mainSlider img.active
+{
+    z-index: -9;
 }
 
-#mainSlider img.last-active {
-  z-index: -8;
+#mainSlider img.last-active
+{
+    z-index: -8;
 }
 
 /* Staff Design */
-#mainStaff {
-  margin-top: 140px;
-  display: inline-block;
+#mainStaff
+{
+    display: inline-block;
+
+    margin-top: 140px;
 }
 
-.staff {
-  width: 350px;
-  display: inline-block;
+.staff
+{
+    display: inline-block;
+
+    width: 350px;
 }
 
-.staffphoto {
-  display: inline;
-  margin: 10px 30px 10px 30px;
+.staffphoto
+{
+    display: inline;
+
+    margin: 10px 30px 10px 30px;
 }
 
-.staffname {
-  text-align: center;
-  font-family: Indie Flower;
-  font-size: 20pt;
-  font-weight: bolder;
-  
+.staffname
+{
+    font-family: Indie Flower;
+    font-size: 20pt;
+    font-weight: bolder;
+
+    text-align: center;
 }
 
-.staffphoto img{
-  height: 280px;
-  width: 280px;
-  border-radius: 100px;
+.staffphoto img
+{
+    width: 280px;
+    height: 280px;
+
+    border-radius: 100px;
 }
 
-.staffbox {
-  display: none;
-  margin: auto;
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  width: 650px;
-  height: 400px;
-  z-index: 112;
-  background-color: white;
-  border-radius: 10px;
+.staffbox
+{
+    position: absolute;
+    z-index: 112;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 650px;
+    height: 400px;
+    margin: auto;
+
+    border-radius: 10px;
+    background-color: white;
 }
 
-.staffboxphoto {
-  display: block;
-  float: left;
+.staffboxphoto
+{
+    display: block;
+    float: left;
 }
 
-.staffboxphoto img{
-  width: 280px;
-  height: 400px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+.staffboxphoto img
+{
+    width: 280px;
+    height: 400px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.staffdescription {
-  font-family: Indie Flower;
-  font-size: 16pt;
-  text-align: justify;
-  width: 300px;
-  float: left; 
-  margin-top: 20px;
-  margin-left: 20px;
+.staffdescription
+{
+    font-family: Indie Flower;
+    font-size: 16pt;
+
+    float: left;
+
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    text-align: justify;
 }
 
 /* Product design*/
-#coverdiv {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 111;
-  background-color: rgba(0,0,0,0.75);
+#coverdiv
+{
+    position: absolute;
+    z-index: 111;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,.75);
 };
 
-#mainProducts {
-  /*min-width: 100%;*/
+#mainProducts
+{
+    /*min-width: 100%;*/
 }
 
-#products{
-  margin-top: 140px;
-  display: inline-block;
+#products
+{
+    display: inline-block;
+
+    margin-top: 140px;
 }
 
-.product {
-  width: 350px;
-  display: inline-block;
+.product
+{
+    display: inline-block;
+
+    width: 350px;
 }
 
-.productphoto {
-  display: inline;
-  margin: 10px 30px 10px 30px;
+.productphoto
+{
+    display: inline;
+
+    margin: 10px 30px 10px 30px;
 }
 
-.productname {
-  text-align: center;
-  font-family: Indie Flower;
-  font-size: 20pt;
-  font-weight: bolder;
+.productname
+{
+    font-family: Indie Flower;
+    font-size: 20pt;
+    font-weight: bolder;
+
+    text-align: center;
 }
 
-.productphoto img{
-  height: 400px;
-  width: 280px;
-  border-radius: 10px;
+.productphoto img
+{
+    width: 280px;
+    height: 400px;
+
+    border-radius: 10px;
 }
 
-.productbox {
-  display: none;
-  margin: auto;
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  width: 650px;
-  height: 391px;
-  z-index: 112;
-  background-color: white;
-  border-radius: 10px;
+.productbox
+{
+    position: absolute;
+    z-index: 112;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 650px;
+    height: 391px;
+    margin: auto;
+
+    border-radius: 10px;
+    background-color: white;
 }
 
-.productboxphoto {
-  display: block;
-  float: left;
+.productboxphoto
+{
+    display: block;
+    float: left;
 }
 
-.productboxphoto img{
-  width: 300px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+.productboxphoto img
+{
+    width: 300px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.productdescription {
-  font-family: Indie Flower;
-  width: 300px;
-  float: left; 
-  margin-top: 20px;
-  margin-left: 20px;
+.productdescription
+{
+    font-family: Indie Flower;
+
+    float: left;
+
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.subtitle{
-  font-weight: bolder;
-  font-size: 20pt;
+.subtitle
+{
+    font-size: 20pt;
+    font-weight: bolder;
 }
 
 /* Contact Design */
-#contactUs {
-  margin-top: 110px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  width: 1000px;
-  height: 500px;
+#contactUs
+{
+    width: 1000px;
+    height: 500px;
+    margin-top: 110px;
+    margin-bottom: 10px;
+    margin-left: 30px;
 }
 
-#ourMap {
-  float: left;
+#ourMap
+{
+    float: left;
 }
 
-#mapFrame {
-  margin-top: 20px;
-  width: 470px;
-  height: 470px; 
+#mapFrame
+{
+    width: 470px;
+    height: 470px;
+    margin-top: 20px;
 }
 
-#contactDetails{
-  float: left;
-  margin-top: 30px;
-  width: 490px
+#contactDetails
+{
+    float: left;
+
+    width: 490px;
+    margin-top: 30px;
 }
 
-#ourLocation{
-  float:left;
-  margin-left: 50px;
-  text-align: center;
-  width: 400px;
+#ourLocation
+{
+    float: left;
+
+    width: 400px;
+    margin-left: 50px;
+
+    text-align: center;
 }
 
-#ourLocation img{
-  width: 75%;
-  border-radius: 10px;
+#ourLocation img
+{
+    width: 75%;
+
+    border-radius: 10px;
 }
 
-#contactForm {
-  display: block;
-  width: 490px;
-  text-align: center;
+#contactForm
+{
+    display: block;
+
+    width: 490px;
+
+    text-align: center;
 }
 
-textarea{
-  width: 300px;
+textarea
+{
+    width: 300px;
 }
 
-input{
-  width: 300px;
+input
+{
+    width: 300px;
 }
 
-button{
-  width: 300px;
-}
-/* Header design */
-#header {
-  z-index: 100;
-  background: #999966;
-  overflow:auto;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  float: left;
-  outline-style: solid;
-  outline-width:  1px;
-  outline-bottom-color: #717344;
+button
+{
+    width: 300px;
 }
 
-#mainmenu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  border: 20px solid;
-  background-color: blue;
-  float:right;
-}
-
-nav {
-  list-style-type: none;
-  margin-top: 30px;
-  overflow: hidden;
-  height:80px;
-  float: right;
-}
-
-nav li {
-  float:left;
-}
-
-nav li a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  font-style: bold;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16pt;
-  text-decoration: none;
-}
-
-nav a:hover:not(.active) {
-  color: blue;
-}
-
-nav li a.active {
-  background-color: #4CAF50;
-}
-
-.logo {
-	display: inline;
-	width:150px;
-	height:80px;
-	margin-top: 15px;
-	margin-left: 15px;
-	float: left;
-}
 
 /* About page*/
-#aboutUs{
-  width: 900px;
-  height: 350px;
-  margin: 0 auto;
-  margin-top: 140px;
-  /*margin-bottom: 30px;*/
+#aboutUs
+{
+    width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 140px;
 }
 
-#ourHistory{
-  width: 400px;
-  margin-right: 50px;
-  float: left;
-  font-family: "Indie Flower";
-  text-align: justify;
+#ourHistory
+{
+    font-family: 'Indie Flower';
+
+    float: left;
+
+    width: 400px;
+    margin-right: 50px;
+
+    text-align: justify;
 }
 
-#aboutPhoto img{
-  width: 400px;
-  height: 300px;
-  margin-top: 25px;
-  border-radius: 10px;
-  float: left;
+#aboutPhoto img
+{
+    float: left;
+
+    width: 400px;
+    height: 300px;
+    margin-top: 25px;
+
+    border-radius: 10px;
 }
 
 /* Footer design */
-#footer {
-  background-color: #999966;
-  min-width: 100%;
-  overflow: auto;
-  display: block;
-  margin-top: 10px;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #717344;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #717344;
+#footer
+{
+    display: block;
+    overflow: auto;
+
+    min-width: 100%;
+    margin-top: 10px;
+
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #717344;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #717344;
+    background-color: #996;
 }
 
-.socialmedia a{
-  text-decoration: none; 
+.socialmedia a
+{
+    text-decoration: none;
 }
 
-.socialmedia{
-  /*display: inline-block;*/
-  float: left;
-  width: 300px;
-  padding-left: 50px;
+.socialmedia
+{
+    float: left;
+
+    width: 300px;
+    padding-left: 50px;
 }
 
-.socialmedia a img{
-  height: 50px;
-  display: inline;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+.socialmedia a img
+{
+    display: inline;
+
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-#customerquotes{
-  display: inline;
-  width: 650px;
-  margin-top: 20px; 
+#customerquotes
+{
+    display: inline;
+
+    width: 650px;
+    margin-top: 20px;
 }
 
-.customerquote{
-  display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 320px;
+.customerquote
+{
+    display: inline-block;
+
+    width: 320px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
-.quote{
-  display: block;
-  font-size: 10pt;
-  font-style: italic;
-  font-family: sans-serif;
-  word-wrap: normal;
-  text-align: justify;
+.quote
+{
+    font-family: sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+
+    display: block;
+
+    text-align: justify;
+    word-wrap: normal;
 }
 
-.customername{
-  display: block;
-  text-align: right;
-  font-style: bold;
-  font-size: 14pt;
-  font-family: sans-serif;
-}
+.customername
+{
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-style: bold;
 
+    display: block;
+
+    text-align: right;
+}
