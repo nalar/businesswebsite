@@ -289,9 +289,7 @@ nav li a.active
 
 .productphoto img
 {
-  width: 280px;
-  height: 400px;
-
+  height: 350px;
   border-radius: 10px;
 }
 
@@ -318,11 +316,13 @@ nav li a.active
 {
   display: block;
   float: left;
+  width: 300px;
+  padding-top: 50px;
 }
 
 .productboxphoto img
 {
-  width: 300px;
+  height: 300px;
 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
