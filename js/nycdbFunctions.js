@@ -61,3 +61,14 @@ function slideSwitch() {
         $active.removeClass('active last-active');
     });
 }
+
+$(document).ready(function(){
+    $("form").submit(function(){
+        var message = $("#Message").val()
+        var name = $("#FirstName").val()
+        var email = $("#Email").val()
+        alert("Email adress:" + email + " name: " + name + " message: " + message);
+    });
+});
+
+f
