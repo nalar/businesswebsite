@@ -1,5 +1,12 @@
+var activeSlide = 0;
+var activeSlideDiv = 1;
+
 $(document).ready(function() {
-    setInterval( "slideSwitch()", 4000 );
+
+    sliderImages = [
+    "./images/mainslider/1.jpg",
+    "./images/mainslider/2.jpg",
+    "./images/mainslider/3.jpg"];
 
     $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
         $("#coverdiv").fadeIn(500);
@@ -43,23 +50,23 @@ $(document).ready(function() {
         $("#staffbox2").fadeOut(500);             // Display the infobox
     });
 
+    setInterval( "mainSlide()", 3000 );
+
 });
 
-function slideSwitch() {
-    var $active = $('#mainSlider IMG.active');
-
-    if ( $active.length == 0 ) $active = $('#mainSlider IMG:last');
-
-    var $next =  $active.next().length ? $active.next()
-    : $('#mainSlider IMG:first');
-
-    $active.addClass('last-active');
-    
-    $next.css({opacity: 0.0})
-    .addClass('active')
-    .animate({opacity: 1.0}, 1000, function() {
-        $active.removeClass('active last-active');
-    });
+function mainSlide(){
+    if(activeSlide === sliderImages.length-1){
+        $("#mainSlider").css("background-image","url("+sliderImages[activeSlide]+")").css("opacity","1.0");
+        $("#mainSlider2").css("opacity","0.0");
+        activeSlide = 0;
+        $("#mainSlider2").css("background-image","url("+sliderImages[activeSlide]+")").animate({opacity: 1.0}, 1000);
+    }
+    else{
+       $("#mainSlider").css("background-image","url("+sliderImages[activeSlide]+")").css("opacity","1.0");
+       $("#mainSlider2").css("opacity","0.0");
+       activeSlide++
+       $("#mainSlider2").css("background-image","url("+sliderImages[activeSlide]+")").animate({opacity: 1.0}, 1000);
+   };
 }
 
 $(document).ready(function(){

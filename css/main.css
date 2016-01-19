@@ -91,38 +91,33 @@ nav li a.active
 }
 
 /* Main Slider*/
-#mainLanding
-{
-    width: 100%;
+#mainLanding {
+  top:0;
+  left: 0;
+  width: 100%;
+}
+#mainSlider { 
+  position:absolute;
+  background-image: url("../images/mainslider/1.jpg");
+  background-size: cover;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-#mainSlider
-{
-    position: relative;
-    top: 110;
-    left: 0;
-
-    height: 100%;
+#mainSlider2 {
+  position:absolute;
+  background-image: url("../images/mainslider/1.jpg");
+  background-size: cover;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-#mainSlider img
-{
-    position: absolute;
-    z-index: -10;
-    top: 110;
-    left: 0;
-
-    width: 100%;
-}
-
-#mainSlider img.active
-{
-    z-index: -9;
-}
-
-#mainSlider img.last-active
-{
-    z-index: -8;
+#mainSlider img{
+  display: none;
 }
 
 /* Staff Design */
@@ -324,7 +319,7 @@ nav li a.active
 /* Contact Design */
 #contactUs
 {
-    width: 100%;
+    width: 1000px;
     height: 500px;
     margin-top: 110px;
     margin-bottom: 10px;
@@ -345,9 +340,10 @@ nav li a.active
 
 #contactDetails
 {
+    float: left;
+
     width: 490px;
     margin-top: 30px;
-    float: left;
 }
 
 #ourLocation
