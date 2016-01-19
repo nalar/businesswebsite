@@ -38,8 +38,6 @@ body{
 }
 
 .staff {
-  /*margin-left: 140px;*/
-
   width: 350px;
   display: inline-block;
 }
@@ -60,6 +58,7 @@ body{
 .staffphoto img{
   height: 400px;
   width: 280px;
+  border-radius: 10px;
 }
 
 .staffbox {
@@ -138,6 +137,7 @@ body{
 .productphoto img{
   height: 400px;
   width: 280px;
+  border-radius: 10px;
 }
 
 .productbox {
@@ -179,26 +179,53 @@ body{
 /* Contact Design */
 #contactUs {
   margin-top: 110px;
+  width: 1000px;
+  /*height: 600px;*/
 }
+
 #ourMap {
   float: left;
 }
+
+#mapFrame {
+ width: 490px;
+ height: 490px;
+}
+
+#contactDetails{
+  float: left;
+  margin-top: 20px;
+  width: 490px
+}
+
 #ourLocation{
-  text-align: center;
-  margin-top: 50px;
+  float:left;
   margin-left: 50px;
-}
-
-#building{
-  width: 25%
-}
-#contactForm {
   text-align: center;
-  display: inline;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 400px;
 }
 
+#ourLocation img{
+  width: 75%;
+}
+
+#contactForm {
+  display: block;
+  width: 490px;
+  text-align: center;
+}
+
+textarea{
+  width: 300px;
+}
+
+input{
+  width: 300px;
+}
+
+button{
+  width: 300px;
+}
 /* Header design */
 #header {
   z-index: 100;
@@ -209,6 +236,9 @@ body{
   left: 0;
   top: 0;
   float: left;
+  outline-style: solid;
+  outline-width:  1px;
+  outline-bottom-color: #717344;
 }
 
 #mainmenu {
@@ -266,6 +296,12 @@ nav li a.active {
   overflow: auto;
   display: block;
   margin-top: 100px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #717344;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #717344;
 }
 
 .socialmedia a{
