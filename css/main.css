@@ -324,7 +324,7 @@ nav li a.active
 /* Contact Design */
 #contactUs
 {
-    width: 1000px;
+    width: 100%;
     height: 500px;
     margin-top: 110px;
     margin-bottom: 10px;
@@ -345,10 +345,9 @@ nav li a.active
 
 #contactDetails
 {
-    float: left;
-
     width: 490px;
     margin-top: 30px;
+    float: left;
 }
 
 #ourLocation
