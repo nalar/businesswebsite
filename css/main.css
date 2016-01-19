@@ -30,6 +30,74 @@ body{
   z-index: -8;
 }
 
+/* Staff Design */
+#mainStaff {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+
+.staff {
+  /*margin-left: 140px;*/
+
+  width: 350px;
+  display: inline-block;
+}
+
+.staffphoto {
+  display: inline;
+  margin: 10px 30px 10px 30px;
+}
+
+.staffname {
+  text-align: center;
+  font-family: Indie Flower;
+  font-size: 20pt;
+  font-weight: bolder;
+  
+}
+
+.staffphoto img{
+  height: 400px;
+  width: 280px;
+}
+
+.staffbox {
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 650px;
+  height: 391px;
+  z-index: 112;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.staffboxphoto {
+  display: block;
+  float: left;
+}
+
+.staffboxphoto img{
+  width: 300px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.staffdescription {
+  font-family: Indie Flower;
+  width: 300px;
+  float: left; 
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.subtitle{
+  font-weight: bolder;
+  font-size: 20pt;
+}
+
 /* Product design*/
 #coverdiv {
   display: none;
