@@ -154,8 +154,8 @@ nav li a.active {
 #footer {
   z-index: 100;
   padding-top: 10px;
-  padding-left: 10px;
-  background-color: #A3BBCA;
+  padding-right: 30px;
+  background-color: #999966;
   position: fixed;
   width: 100%;
   left: 0;
