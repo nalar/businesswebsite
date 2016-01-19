@@ -89,6 +89,29 @@ body{
   margin-left: 20px;
 }
 
+/* contact pagina */
+#contactUs {
+  margin-top: 110px;
+}
+#ourMap {
+  float: left;
+}
+#ourLocation{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#building{
+  width: 25%
+}
+#contactForm {
+  text-align: center;
+  display: inline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* Header design */
 #header {
   z-index: 100;
@@ -204,3 +227,4 @@ nav li a.active {
   font-size: 14pt;
   font-family: sans-serif;
 }
+
