@@ -1,13 +1,29 @@
 $(document).ready(function() {
-    
-    $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
-        $("#coverdiv").css("display","block");              // Open opacity div
-        $("#productbox1").css("display","block")            // Display the infobox
-    });
+    setInterval( "slideSwitch()", 3000 );
 
-    $("#productbox1").click(function(){                     // Clicked the photo so open the matching info box
-        $("#coverdiv").css("display","none");               // Open opacity div
-        $("#productbox1").css("display","none")             // Display the infobox
+    $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
+        $("#coverdiv").fadeIn(500);
+        $("#productbox1").fadeIn(500);            // Display the infobox
+    });
+    $("#coverdiv, #productbox1").click(function(){                     // Clicked the photo so open the matching info box
+        $("#coverdiv").fadeOut(500);
+        $("#productbox1").fadeOut(500);             // Display the infobox
+    });
+        $("#productphoto2").children().click(function(){        // Clicked the photo so open the matching info box
+            $("#coverdiv").fadeIn(500);
+        $("#productbox2").fadeIn(500);            // Display the infobox
+    });
+    $("#coverdiv, #productbox2").click(function(){                     // Clicked the photo so open the matching info box
+        $("#coverdiv").fadeOut(500);
+        $("#productbox2").fadeOut(500);             // Display the infobox
+    });
+    $("#productphoto3").children().click(function(){        // Clicked the photo so open the matching info box
+        $("#coverdiv").fadeIn(500);
+        $("#productbox3").fadeIn(500);            // Display the infobox
+    });
+    $("#coverdiv, #productbox3").click(function(){                     // Clicked the photo so open the matching info box
+        $("#coverdiv").fadeOut(500);
+        $("#productbox3").fadeOut(500);             // Display the infobox
     });
 
 });
@@ -18,29 +34,13 @@ function slideSwitch() {
     if ( $active.length == 0 ) $active = $('#mainSlider IMG:last');
 
     var $next =  $active.next().length ? $active.next()
-        : $('#mainSlider IMG:first');
+    : $('#mainSlider IMG:first');
 
     $active.addClass('last-active');
-        
+    
     $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 1000, function() {
-            $active.removeClass('active last-active');
-        });
-}
-
-$(function() {
-    setInterval( "slideSwitch()", 3000 );
-});
-
-
-function showDetails(){
-    // This function will open an information window showing
-    // the details of the clicked object (product or person)
-}
-
-function sendMail(){
-    // Pretend we sent a mail with the details as entered in
-    // the form on the contact page. Just open a window with
-    // confirmation about it.
+    .addClass('active')
+    .animate({opacity: 1.0}, 1000, function() {
+        $active.removeClass('active last-active');
+    });
 }
