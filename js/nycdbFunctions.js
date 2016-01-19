@@ -8,46 +8,47 @@ $(document).ready(function() {
     "./images/mainslider/2.jpg",
     "./images/mainslider/3.jpg"];
 
-    $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
+// Add a loop here 
+    $("#productphoto1").children().click(function(){        
         $("#coverdiv").fadeIn(500);
-        $("#productbox1").fadeIn(500);            // Display the infobox
+        $("#productbox1").fadeIn(500);            
     });
-    $("#coverdiv, #productbox1").click(function(){                     // Clicked the photo so open the matching info box
+    $("#coverdiv, #productbox1").click(function(){                     
         $("#coverdiv").fadeOut(500);
-        $("#productbox1").fadeOut(500);             // Display the infobox
+        $("#productbox1").fadeOut(500);             
     });
-        $("#productphoto2").children().click(function(){        // Clicked the photo so open the matching info box
+        $("#productphoto2").children().click(function(){        
             $("#coverdiv").fadeIn(500);
-        $("#productbox2").fadeIn(500);            // Display the infobox
+        $("#productbox2").fadeIn(500);            
     });
-    $("#coverdiv, #productbox2").click(function(){                     // Clicked the photo so open the matching info box
+    $("#coverdiv, #productbox2").click(function(){                     
         $("#coverdiv").fadeOut(500);
-        $("#productbox2").fadeOut(500);             // Display the infobox
+        $("#productbox2").fadeOut(500);             
     });
-    $("#productphoto3").children().click(function(){        // Clicked the photo so open the matching info box
+    $("#productphoto3").children().click(function(){        
         $("#coverdiv").fadeIn(500);
-        $("#productbox3").fadeIn(500);            // Display the infobox
+        $("#productbox3").fadeIn(500);            
     });
-    $("#coverdiv, #productbox3").click(function(){                     // Clicked the photo so open the matching info box
+    $("#coverdiv, #productbox3").click(function(){                     
         $("#coverdiv").fadeOut(500);
-        $("#productbox3").fadeOut(500);             // Display the infobox
+        $("#productbox3").fadeOut(500);             
     });
 
-    $("#lindsey").children().click(function(){        // Clicked the photo so open the matching info box
+    $("#lindsey").children().click(function(){        
         $("#coverdiv").fadeIn(500);
-        $("#staffbox1").fadeIn(500);            // Display the infobox
+        $("#staffbox1").fadeIn(500);            
     });
-    $("#coverdiv, #staffbox1").click(function(){                     // Clicked the photo so open the matching info box
+    $("#coverdiv, #staffbox1").click(function(){                     
         $("#coverdiv").fadeOut(500);
-        $("#staffbox1").fadeOut(500);             // Display the infobox
+        $("#staffbox1").fadeOut(500);             
     });
-        $("#thijs").children().click(function(){        // Clicked the photo so open the matching info box
+        $("#thijs").children().click(function(){        
             $("#coverdiv").fadeIn(500);
-        $("#staffbox2").fadeIn(500);            // Display the infobox
+        $("#staffbox2").fadeIn(500);            
     });
-    $("#coverdiv, #staffbox2").click(function(){                     // Clicked the photo so open the matching info box
+    $("#coverdiv, #staffbox2").click(function(){                     
         $("#coverdiv").fadeOut(500);
-        $("#staffbox2").fadeOut(500);             // Display the infobox
+        $("#staffbox2").fadeOut(500);             
     });
 
     setInterval( "mainSlide()", 3000 );
