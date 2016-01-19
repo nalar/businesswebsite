@@ -289,6 +289,21 @@ nav li a.active {
 	float: left;
 }
 
+/* About page*/
+#aboutUs{
+  margin-top: 140px;
+  height: 600px;
+}
+
+#ourHistory{
+  display: inline-block;
+}
+
+#aboutPhoto{
+ display: inline-block;
+  width: 400px;
+}
+
 /* Footer design */
 #footer {
   background-color: #999966;
