@@ -4,7 +4,7 @@ body{
 
 /* Main Slider*/
 #mainLanding {
-  width: 100%; 
+  width: 100%;
 }
 
 #mainSlider {
@@ -32,9 +32,8 @@ body{
 
 /* Staff Design */
 #mainStaff {
-  width: 900px;
-  margin: 0 auto;
   margin-top: 140px;
+  display: inline-block;
 }
 
 .staff {
@@ -56,9 +55,9 @@ body{
 }
 
 .staffphoto img{
-  height: 400px;
+  height: 280px;
   width: 280px;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
 .staffbox {
@@ -108,11 +107,11 @@ body{
 };
 
 #mainProducts {
-  min-width: 100%;
+  /*min-width: 100%;*/
 }
 
 #products{
-  margin: 140px auto;
+  margin-top: 140px;
   display: inline-block;
 }
 
@@ -131,7 +130,6 @@ body{
   font-family: Indie Flower;
   font-size: 20pt;
   font-weight: bolder;
-  
 }
 
 .productphoto img{
@@ -179,8 +177,10 @@ body{
 /* Contact Design */
 #contactUs {
   margin-top: 110px;
+  margin-left: 30px;
+  margin-bottom: 10px;
   width: 1000px;
-  /*height: 600px;*/
+  height: 500px;
 }
 
 #ourMap {
@@ -188,13 +188,14 @@ body{
 }
 
 #mapFrame {
- width: 490px;
- height: 490px;
+  margin-top: 20px;
+  width: 470px;
+  height: 470px; 
 }
 
 #contactDetails{
   float: left;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 490px
 }
 
@@ -207,6 +208,7 @@ body{
 
 #ourLocation img{
   width: 75%;
+  border-radius: 10px;
 }
 
 #contactForm {
@@ -293,17 +295,27 @@ nav li a.active {
 
 /* About page*/
 #aboutUs{
+  width: 900px;
+  height: 350px;
+  margin: 0 auto;
   margin-top: 140px;
-  height: 600px;
+  /*margin-bottom: 30px;*/
 }
 
 #ourHistory{
-  display: inline-block;
+  width: 400px;
+  margin-right: 50px;
+  float: left;
+  font-family: "Indie Flower";
+  text-align: justify;
 }
 
-#aboutPhoto{
- display: inline-block;
+#aboutPhoto img{
   width: 400px;
+  height: 300px;
+  margin-top: 25px;
+  border-radius: 10px;
+  float: left;
 }
 
 /* Footer design */
@@ -312,7 +324,7 @@ nav li a.active {
   min-width: 100%;
   overflow: auto;
   display: block;
-  margin-top: 100px;
+  margin-top: 10px;
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #717344;
@@ -326,7 +338,8 @@ nav li a.active {
 }
 
 .socialmedia{
-  display: inline-block;
+  /*display: inline-block;*/
+  float: left;
   width: 300px;
   padding-left: 50px;
 }
