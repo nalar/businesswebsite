@@ -423,7 +423,10 @@ button
 /* Footer design */
 #footer
 {
-    display: block;
+    /*display: block;*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
     overflow: auto;
 
     min-width: 100%;
