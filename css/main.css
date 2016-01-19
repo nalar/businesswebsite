@@ -1,9 +1,6 @@
 /* Main Slider*/
 #mainLanding {
-  top:0;
-  left: 0;
-  width: 100%;
-  height:100%;
+  width: 100%; 
 }
 
 #mainSlider {
@@ -42,27 +39,23 @@
 };
 
 #mainProducts {
-  float: left;
   min-width: 100%;
   height: 100%;
-  margin-left: -10px;
   background-color: #E4E6E6;
 }
 
 #products{
-  width: 90%;
-  /*padding-top: 150px;*/
-  /*padding-bottom: 80px;*/
+  margin-top: 120px;
+display: box;
 }
 
 .product {
   width: 350px;
-  float: left;
+  display: inline-block;
 }
 
 .productphoto {
-  float: left;
-  display: block;
+  display: inline;
   margin: 10px 30px 10px 30px;
 }
 
@@ -71,6 +64,7 @@
   font-family: Indie Flower;
   font-size: 20pt;
   font-weight: bolder;
+  
 }
 
 .productphoto img{
@@ -199,63 +193,56 @@ nav li a.active {
 
 /* Footer design */
 #footer {
-  z-index: 100;
-  padding-top: 10px;
-  padding-right: 30px;
   background-color: #999966;
-  position: fixed;
-  width: 100%;
-  height: 75px;
-  left: 0; bottom: 0;
+  min-width: 100%;
   overflow: auto;
   display: block;
-  float: left;
+  margin-top: 100px;
 }
 
-#footercontent{
-  height: 75px;
-  width: 100%;
+.socialmedia a{
+  text-decoration: none; 
 }
 
 .socialmedia{
-  display: block;
-  float: left;
+  
+  display: inline-block;
   width: 300px;
-  height: 75px;
   padding-left: 50px;
-  text-align: center;
 }
 
 .socialmedia a img{
   height: 50px;
-  display: block;
-  float: left;
+  display: inline;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
+#customerquotes{
+  display: inline;
+  width: 650px;
+  padding-top: 
+}
+
 .customerquote{
-  vertical-align: middle;
-  display: block;
+  display: inline-block;
   margin-left: 15px;
   margin-right: 15px;
-  bottom: 10;
-  width: 300px;
-  height: 100px;
-  float: left;
+  width: 320px;
 }
 
 .quote{
+  display: block;
   font-size: 10pt;
   font-style: italic;
   font-family: sans-serif;
   word-wrap: normal;
   text-align: justify;
-  height: 15px;
 }
 
 .customername{
+  display: block;
   text-align: right;
   font-style: bold;
   font-size: 14pt;
