@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    setInterval( "slideSwitch()", 3000 );
+    setInterval( "slideSwitch()", 4000 );
 
     $("#productphoto1").children().click(function(){        // Clicked the photo so open the matching info box
         $("#coverdiv").fadeIn(500);
@@ -70,5 +70,3 @@ $(document).ready(function(){
         alert("Email adress:" + email + " name: " + name + " message: " + message);
     });
 });
-
-f
