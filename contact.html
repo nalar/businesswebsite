@@ -40,11 +40,18 @@
 				</p>
 			</div>
 			<div id="contactForm">
-				<form id="mailForm" action="/send-mail">
+<!-- 				<form id="mailForm" action="submit" method="post" enctype="text/plain" >
 					<textarea id="mainText" rows="5" type="text"  placeholder="Type your message here"></textarea><br>
 					<input id="yourName" type="text" placeholder="Your name"><br>
 					<input id="yourMail" type="text" placeholder="Your e-mail address"><br>
-					<button type="submit">Send your message</button>
+					<button id="submit" type="button">Send your message</button>
+				</form> -->
+			
+				<form action="">
+					<Textarea type="text" id='Message' col="5" placeholder ="Your message here"></textarea>
+					<input type="text" id="FirstName" placeholder="Name"><br>
+					<input type="text" id="Email" placeholder="email@adress.com"><br>
+					<input type="submit" value="Submit">
 				</form>
 			</div>
 		</div>
