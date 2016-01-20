@@ -196,7 +196,7 @@ nav li a.active
 
 .staffbox
 {
-  position: absolute;
+  position: fixed;
   z-index: 112;
   top: 0;
   right: 0;
@@ -252,8 +252,10 @@ nav li a.active
 
   display: none;
 
-  width: 100%;
-  height: 100%;
+  width: 3000px;
+  height: 3000px;
+
+  overflow: hidden;
 
   background-color: rgba(0,0,0,.75);
 }
@@ -297,7 +299,7 @@ nav li a.active
 
 .productbox
 {
-  position: absolute;
+  position: fixed;
   z-index: 112;
   top: 0;
   right: 0;
@@ -490,7 +492,7 @@ button
 
 .emailbox
 {
-  position: absolute;
+  position: fixed;
   z-index: 112;
   top: 0;
   right: 0;
