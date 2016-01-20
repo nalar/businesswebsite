@@ -50,10 +50,25 @@ $(document).ready(function() {
         $("#coverdiv").fadeOut(500);
         $("#staffbox2").fadeOut(500);             
     });
+    $("#submitIt").click(function(){
+        var message = $("#Message").val()
+        var name = $("#FirstName").val()
+        var email = $("#Email").val() 
+        $('#emailMessage').html(message) 
+        $('#emailSender').html(name + "</br>" + email)
+        $("#coverdiv").fadeIn(500);
+        $("#emailbox").fadeIn(500);
+
+    });
+        $("#coverdiv, #emailbox").click(function(){                   
+        $("#coverdiv").fadeOut(500);
+        $("#emailbox").fadeOut(500); 
+
+    });
 
     setInterval( "mainSlide()", 3000 );
 
-});
+    });
 
 function mainSlide(){
     if(activeSlide === sliderImages.length-1){
@@ -76,5 +91,16 @@ $(document).ready(function(){
         var name = $("#FirstName").val()
         var email = $("#Email").val()
         alert("Email adress:" + email + " name: " + name + " message: " + message);
+        $("#emailText").html("text");
     });
 });
+
+function sentMail (){
+    // iemand klikt op submit
+    // pakt alle variabelen
+    // fade in met coverdiv
+    // fade in met emailbox
+    // display die waarde
+    // op de box clicken is weer uit faden
+}
+
