@@ -27,633 +27,709 @@ body
   opacity: 0.45;
 }
 
-/* Header design */
-#header
-{
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-
-  float: left;
-  overflow: auto;
-
-  width: 100%;
-
-  outline-width: 1px;
-  outline-style: solid;
-  background: rgba(153, 153, 102, 0.8);
-
-  outline-bottom-color: #717344;
-}
-
-#mainmenu
-{
-  float: right;
-
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-
-  border: 20px solid;
-  background-color: blue;
-}
-
-nav
-{
-  float: right;
-  overflow: hidden;
-
-  height: 80px;
-  margin-top: 30px;
-
-  list-style-type: none;
-}
-
-nav li
-{
-  float: left;
-}
-
-nav li a
-{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16pt;
-  font-style: bold;
-
-  display: inline-block;
-
-  padding: 14px 16px;
-
-  text-align: center;
-  text-decoration: none;
-
-  color: black;
-}
-
-nav a:hover:not(.active)
-{
-  color: gray;
-}
-
-nav li a.active
-{
-  background-color: #4caf50;
-}
-
-.logo
-{
-  display: inline;
-  float: left;
-
-  width: 150px;
-  height: 80px;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-/* Main Slider*/
-#mainLanding
-{
-  top: 0;
-  left: 0;
-
-  width: 100%;
-}
-#mainSlider
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-image: url('../images/mainslider/1.jpg');
-  background-size: cover;
-}
-
-#mainSlider2
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-image: url('../images/mainslider/1.jpg');
-  background-size: cover;
-}
-
-#mainSlider img
-{
-  display: none;
-}
-
-/* Staff Design */
-#mainStaff
-{
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  margin-top: 140px;
-  padding-bottom: 280px;
-}
-
-.staff
-{
-  display: inline-block;
-
-  width: 350px;
-}
-
-.staffphoto
-{
-  display: inline;
-
-  margin: 10px 30px 10px 30px;
-}
-
-.staffname
-{
-  font-family: Indie Flower;
-  font-size: 20pt;
-  font-weight: bolder;
-
-  text-align: center;
-}
-
-.staffphoto img
-{
-  width: 280px;
-  height: 280px;
-
-  border-radius: 100px;
-}
-
-.staffbox
-{
-  position: fixed;
-  z-index: 112;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  display: none;
-
-  width: 650px;
-  height: 400px;
-  margin: auto;
-
-  border-radius: 10px;
-  background-color: white;
-}
-
-.staffboxphoto
-{
-  display: block;
-  float: left;
-}
-
-.staffboxphoto img
-{
-  width: 280px;
-  height: 400px;
-
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.staffdescription
-{
-  font-family: Indie Flower;
-  font-size: 16pt;
-
-  float: left;
-
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 20px;
-
-  text-align: justify;
-}
-
-/* Product design*/
-#coverdiv
-{
-  position: absolute;
-  z-index: 111;
-  top: 0;
-  left: 0;
-
-  display: none;
-
-  width: 3000px;
-  height: 3000px;
-
-  overflow: hidden;
-
-  background-color: rgba(0,0,0,.75);
-}
-
-#mainProducts
-{
-  margin-top: 140px;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 250px;
-}
-
-.product
-{
-  display: inline-block;
-
-  width: 350px;
-}
-
-.productphoto
-{
-  display: inline;
-
-  margin: 10px 30px 10px 30px;
-}
-
-.productname
-{
-  font-family: Indie Flower;
-  font-size: 20pt;
-  font-weight: bolder;
-
-  text-align: center;
-}
-
-.productphoto img
-{
-  height: 350px;
-  border-radius: 10px;
-}
-
-.productbox
-{
-  position: fixed;
-  z-index: 112;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  display: none;
-
-  width: 650px;
-  height: 391px;
-  margin: auto;
-
-  border-radius: 10px;
-  background-color: white;
-}
-
-.productboxphoto
-{
-  display: block;
-  float: left;
-  width: 300px;
-  padding-top: 50px;
-}
-
-.productboxphoto img
-{
-  height: 300px;
-
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.productdescription
-{
-  font-family: Indie Flower;
-
-  float: left;
-
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.subtitle
-{
-  font-size: 20pt;
-  font-weight: bolder;
-}
-
-/* Contact Design */
-#contactUs
-{
-width:100%;
-text-align: center;
-margin-top: 140px;
-padding-bottom: 280px;
-}
-
-#ourMap
-{
-  display: inline-block;
-  width: 50%;
-}
-
-#mapFrame
-{
-  width: 100%;
-  height: 470px;
-  margin-top: 20px;
-}
-
-#contactDetails
-{
-  display: inline-block;
-
-  width: 490px;
-  margin-top: 30px;
-}
-
-#ourLocation
-{
-  float: left;
-
-  width: 400px;
-  margin-left: 50px;
-
-  text-align: center;
-}
-
-#ourLocation img
-{
-  width: 75%;
-
-  border-radius: 10px;
-}
-
-#contactForm
-{
-  display: inline-block;
-
-  width: 490px;
-
-  text-align: center;
-}
-
-textarea
-{
-  width: 300px;
-}
-
-input
-{
-  width: 300px;
-}
-
-button
-{
-  width: 300px;
-}
-#mainLanding
-{
-  top: 0;
-  left: 0;
-
-  width: 100%;
-}
-#mainSlider
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-image: url('../images/mainslider/1.jpg');
-  background-size: cover;
-}
-
-#mainSlider2
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-image: url('../images/mainslider/1.jpg');
-  background-size: cover;
-}
-
-#mainSlider img
-{
-  display: none;
-}
-
-/* email Design */
-.email
-
-{
-  display: inline-block;
-
-  width: 350px;
-}
-
-.emailphoto
-{
-  display: inline;
-
-  margin: 10px 30px 10px 30px;
-}
-
-.emailname
-{
-  font-family: Indie Flower;
-  font-size: 20pt;
-  font-weight: bolder;
-
-  text-align: center;
-}
-
-.emailphoto img
-{
-  width: 280px;
-  height: 280px;
-
-  border-radius: 100px;
-}
-
-.emailbox
-{
-  position: fixed;
-  z-index: 112;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  display: none;
-
-  width: 650px;
-  height: 400px;
-  margin: auto;
-
-  border-radius: 10px;
-  background-color: white;
-}
-
-.emailboxphoto
-{
-  display: block;
-  float: left;
-}
-
-.emailboxphoto img
-{
-  width: 280px;
-  height: 400px;
-
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.emaildescription
-{
-  font-family: Indie Flower;
-  font-size: 16pt;
-
-  float: left;
-
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 20px;
-
-  text-align: justify;
-}
-
-
-/* About page*/
-#aboutUs
-{
-  width:100%;
-  text-align: center;
-  height: 350px;
-  margin-top: 140px;
-}
-
-#ourHistory
-{
-  font-family: 'Indie Flower';
-
-  display: inline-block;
-
-  width: 400px;
-
-  text-align: justify;
-}
-
-#aboutPhoto
-{
-  display: inline-block;
-  width: 500px;
-  margin-top: 25px;
-  padding-bottom: 250px;
-
-}
-
-#aboutPhoto img
-{
-  width: 350px;
-  height: 300px;
-  border-radius: 10px;
-}
-/* Footer design */
-#footer
-{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-
-  overflow: auto;
-
-  min-width: 100%;
-  margin-top: 10px;
-
-  border-top-width: 2px;
-  border-top-style: solid;
-  border-top-color: #717344;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: #717344;
-  background-color: rgba(153, 153, 102, 0.8);
-}
-
-.socialmedia a
-{
-  text-decoration: none;
-}
-
-.socialmedia
-{
-  float: left;
-
-  width: 300px;
-  padding-left: 50px;
-}
-
-.socialmedia a img
-{
-  display: inline;
-
-  height: 50px;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#customerquotes
-{
-  display: inline;
-
-  width: 650px;
-  margin-top: 20px;
-}
-
-.customerquote
-{
-  display: inline-block;
-
-  width: 320px;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-.quote
-{
-  font-family: sans-serif;
-  font-size: 10pt;
-  font-style: italic;
-
-  display: block;
-
-  text-align: justify;
-  word-wrap: normal;
-}
-
-.customername
-{
-  font-family: sans-serif;
-  font-size: 14pt;
-  font-style: bold;
-
-  display: block;
-
-  text-align: right;
-}
+  /* Header Design */
+  #header
+  {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+
+    width: 100%;
+
+    /*max-height: 100px;*/
+
+    outline-width: 1px;
+    outline-style: solid;
+    background: rgba(153, 153, 102, 0.8);
+
+    outline-bottom-color: #717344;
+  }
+
+  #mainmenu
+  {
+    display: inline;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    list-style-type: none;
+
+    border: 20px solid;
+  }
+
+  nav
+  {
+    display: inline-block;
+    overflow: hidden;
+
+    height: 80px;
+    margin-top: 30px;
+
+    list-style-type: none;
+  }
+
+  nav li
+  {
+    display: inline-block;
+  }
+
+  nav li a
+  {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+    font-style: bold;
+
+    display: inline-block;
+
+    padding: 14px 16px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+  }
+
+  nav a:hover:not(.active)
+  {
+    color: gray;
+  }
+
+  nav li a.active
+  {
+    background-color: #4caf50;
+  }
+
+  .logo
+  {
+    float: left;
+
+    width: 150px;
+    height: 80px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  /* Main Slider*/
+  #mainLanding
+  {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+  }
+  #mainSlider
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/mainslider/1.jpg');
+    background-size: cover;
+  }
+
+  #mainSlider2
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/mainslider/1.jpg');
+    background-size: cover;
+  }
+
+  #mainSlider img
+  {
+    display: none;
+  }
+
+  /* Staff Design */
+  #mainStaff
+  {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+    /*padding-bottom: 280px;*/
+  }
+
+  .staff
+  {
+    display: inline-block;
+
+    width: 350px;
+  }
+
+  .staffphoto
+  {
+    display: inline;
+
+    margin: 10px 30px 10px 30px;
+  }
+
+  .staffname
+  {
+    font-family: Indie Flower;
+    font-size: 20pt;
+    font-weight: bolder;
+
+    text-align: center;
+  }
+
+  .staffphoto img
+  {
+    width: 280px;
+    height: 280px;
+
+    border-radius: 100px;
+  }
+
+  .staffbox
+  {
+    position: fixed;
+    z-index: 112;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 650px;
+    height: 400px;
+    margin: auto;
+
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .staffboxphoto
+  {
+    display: block;
+    float: left;
+  }
+
+  .staffboxphoto img
+  {
+    width: 280px;
+    height: 400px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .staffdescription
+  {
+    font-family: Indie Flower;
+    font-size: 16pt;
+
+    float: left;
+
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    text-align: justify;
+  }
+
+  /* Product design*/
+  #coverdiv
+  {
+    position: absolute;
+    z-index: 111;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 3000px;
+    height: 2000px;
+
+    overflow: hidden;
+
+    background-color: rgba(0,0,0,.75);
+  }
+
+  #mainProducts
+  {
+    margin-top: 140px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 110px;
+  }
+
+  .product
+  {
+    display: inline-block;
+
+    width: 350px;
+  }
+
+  .productphoto
+  {
+    display: inline;
+
+    margin: 10px 30px 10px 30px;
+  }
+
+  .productname
+  {
+    font-family: Indie Flower;
+    font-size: 20pt;
+    font-weight: bolder;
+
+    text-align: center;
+  }
+
+  .productphoto img
+  {
+    height: 350px;
+    border-radius: 10px;
+  }
+
+  .productbox
+  {
+    position: fixed;
+    z-index: 112;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 650px;
+    height: 391px;
+    margin: auto;
+
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .productboxphoto
+  {
+    display: block;
+    float: left;
+    width: 300px;
+    padding-top: 50px;
+  }
+
+  .productboxphoto img
+  {
+    height: 300px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .productdescription
+  {
+    font-family: Indie Flower;
+
+    float: left;
+
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .subtitle
+  {
+    font-size: 20pt;
+    font-weight: bolder;
+  }
+
+  /* Contact Design */
+  #contactUs
+  {
+    width:100%;
+    text-align: center;
+    margin-top: 140px;
+    /*padding-bottom: 280px;*/
+  }
+
+  #ourMap
+  {
+    display: inline-block;
+    width: 50%;
+  }
+
+  #mapFrame
+  {
+    width: 100%;
+    height: 470px;
+    margin-top: 20px;
+  }
+
+  #contactDetails
+  {
+    display: inline-block;
+
+    width: 490px;
+    margin-top: 30px;
+  }
+
+  #ourLocation
+  {
+    float: left;
+
+    width: 400px;
+    margin-left: 50px;
+
+    text-align: center;
+  }
+
+  #ourLocation img
+  {
+    width: 75%;
+
+    border-radius: 10px;
+  }
+
+  #contactForm
+  {
+    display: inline-block;
+
+    width: 490px;
+
+    text-align: center;
+  }
+
+  textarea
+  {
+    width: 300px;
+  }
+
+  input
+  {
+    width: 300px;
+  }
+
+  button
+  {
+    width: 300px;
+  }
+  #mainLanding
+  {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+  }
+  #mainSlider
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/mainslider/1.jpg');
+    background-size: cover;
+  }
+
+  #mainSlider2
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/mainslider/1.jpg');
+    background-size: cover;
+  }
+
+  #mainSlider img
+  {
+    display: none;
+  }
+
+  /* email Design */
+  .email
+
+  {
+    display: inline-block;
+
+    width: 350px;
+  }
+
+  .emailphoto
+  {
+    display: inline;
+
+    margin: 10px 30px 10px 30px;
+  }
+
+  .emailname
+  {
+    font-family: Indie Flower;
+    font-size: 20pt;
+    font-weight: bolder;
+
+    text-align: center;
+  }
+
+  .emailphoto img
+  {
+    width: 280px;
+    height: 280px;
+
+    border-radius: 100px;
+  }
+
+  .emailbox
+  {
+    position: fixed;
+    z-index: 112;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 650px;
+    height: 400px;
+    margin: auto;
+
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .emailboxphoto
+  {
+    display: block;
+    float: left;
+  }
+
+  .emailboxphoto img
+  {
+    width: 280px;
+    height: 400px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .emaildescription
+  {
+    font-family: Indie Flower;
+    font-size: 16pt;
+
+    float: left;
+
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    text-align: justify;
+  }
+
+
+  /* About page*/
+  #aboutUs
+  {
+    width:100%;
+    text-align: center;
+    height: 350px;
+    margin-top: 140px;
+  }
+
+  #ourHistory
+  {
+    font-family: 'Indie Flower';
+
+    display: inline-block;
+
+    width: 400px;
+
+    text-align: justify;
+  }
+
+  #aboutPhoto
+  {
+    display: inline-block;
+    width: 500px;
+    margin-top: 25px;
+    /*padding-bottom: 250px;*/
+
+  }
+
+  #aboutPhoto img
+  {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  /* Footer design */
+  #footer
+  {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    overflow: auto;
+
+    width: 100%;
+    margin-top: 10px;
+
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #717344;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #717344;
+    background-color: rgba(153, 153, 102, 0.8);
+  }
+
+  .socialmedia a
+  {
+    text-decoration: none;
+  }
+
+  .socialmedia
+  {
+    /*float: left;*/
+    display:inline-block;
+
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .socialmedia a img
+  {
+    display: inline-block;
+
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  #customerquotes
+  {
+    display: inline;
+
+    width: 650px;
+    margin-top: 20px;
+  }
+
+  .customerquote
+  {
+    display: inline-block;
+
+    width: 320px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .quote
+  {
+    font-family: sans-serif;
+    font-size: 12pt;
+    font-style: italic;
+
+    display: block;
+
+    text-align: justify;
+    word-wrap: normal;
+  }
+
+  .customername
+  {
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-style: bold;
+    margin-top: -15px;
+
+    display: block;
+
+    text-align: right;
+  }
+
+  /* Header Smallscreen*/
+  @media all and (min-width: 0px) and (max-width: 752px) {
+    #header{
+      max-height: 100px;
+      text-align: center;
+    }
+
+    #logo{
+      display: inline-block;
+      width: 400px;
+      text-align: center;
+    }
+    .logo{
+      float: none;
+      height: 12.5%;
+    }
+
+    .mainmenu{
+      display: inline-block;
+      width: 400px;
+      text-align: center;
+      margin-top: -30px;
+    }
+
+    .socialmedia {
+      display: inline-block;
+      padding-left: 0px;
+      padding-bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .socialmedia a img{
+      height: 25px;
+    }
+
+    #customerquotes{
+      display: none;
+    }
+
+    nav li a
+    {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 12pt;
+      font-style: bold;
+
+      display: inline-block;
+
+      padding: 4px 4px;
+
+      text-align: center;
+      text-decoration: none;
+
+      color: black;
+    }
+
+  }
+
+  @media all and (min-width: 0px) and (max-width: 1050px) {
+    #quote1{
+      display: none;
+    }
+  }
+
+  @media all and (min-height: 0px) and (max-height: 600px) {
+    #footer {
+      display: none;
+    }
+  }
