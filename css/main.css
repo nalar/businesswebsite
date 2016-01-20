@@ -356,11 +356,12 @@ margin-top: 140px;
 #ourMap
 {
   display: inline-block;
+  width: 50%;
 }
 
 #mapFrame
 {
-  width: 470px;
+  width: 100%;
   height: 470px;
   margin-top: 20px;
 }
