@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    title NYCDB - Our History
+    link(rel='icon', href='./images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='./css/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Ubuntu:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Indie+Flower', rel='stylesheet', type='text/css')
+    script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+    script(src='./js/nycdbFunctions.js')
+  body
+    #backgrounddiv
+    // Header
+    #header
+      #logo
+        a(href='./')
+          img.logo(src='./images/nycdb_logo.svg')
+      .mainmenu
+        nav
+          li
+            a(href='./index') Home
+          li
+            a(href='./products') Our Beers
+          li
+            a(href='./staff') Our Staff
+          li
+            a(href='./about') About Us
+          li
+            a(href='./contact') Contact
+    // About NYCDB
+    #aboutUs
+      #ourHistory
+        p
+          | While the New York Code and Design Academy has been an established institution for years, only recently a new branch of operation was started in Amsterdam, the Netherlands: 
+          strong New York Code and Design Beers
+          | !
+        p
+          | This branch of the NYCDA makes some of the best craft beers you can get in Amsterdam. Each of our brews is carefully made by hand, just like the websites made by the NYCDA students.
+        p
+          | All of our beers are inspired by popular technologies such as HTML, JavaScript, jQuery, NodeJS and many others. The unique properties of each beer are similar to the properties of their namesake.
+      #aboutPhoto
+        img(src='./images/photos/brewery.jpg')
+    // Footer
+    #footer
+      .socialmedia
+        a(href='http://www.facebook.com/NYCDB')
+          img(src='./images/social/facebook.png')
+        a(href='http://www.twitter.com/NYCDB')
+          img(src='./images/social/twitter.png')
+        a(href='http://www.deliveroo.nl')
+          img(src='./images/social/deliveroo.png')
+      #customerquotes
+        #quote1.customerquote
+          p.quote
+            | The HTML beer is definitely one of the best pilsners I've ever tasted in my life!
+          p.customername Zach Feldman
+        #quote2.customerquote
+          p.quote I love the way the jQuery ale comes with a sophisticated opening mechanism.
+          p.customername Jon Miller

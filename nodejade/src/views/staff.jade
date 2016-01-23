@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    title NYCDB - Meet The Staff
+    link(rel='icon', href='./images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='./css/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Ubuntu:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Indie+Flower', rel='stylesheet', type='text/css')
+    script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+    script(src='./js/nycdbFunctions.js')
+  body
+    #backgrounddiv
+    #coverdiv
+    // Header
+    #header
+      #logo
+        a(href='./')
+          img.logo(src='./images/nycdb_logo.svg')
+      .mainmenu
+        nav
+          li
+            a(href='./index') Home
+          li
+            a(href='./products') Our Beers
+          li
+            a(href='./staff') Our Staff
+          li
+            a(href='./about') About Us
+          li
+            a(href='./contact') Contact
+    // Products
+    #mainStaff
+      #lindsey.staff
+        #staffphoto1.staffphoto
+          img(src='./images/staff/lindsey.jpg')
+        .staffname
+          | Lindsey Schaap
+      #staffbox1.staffbox
+        .staffboxphoto
+          img(src='./images/staff/lindsey_big.jpg')
+        .staffdescription
+          span.subtitle Lindsey Schaap
+          p
+            | Lindsey is one of our co-founders and has strong expertise in everythign related to the brewing of beers. He's in charge of our brewery and also works on web development together with Thijs.
+      #thijs.staff
+        #staffphoto2.staffphoto
+          img(src='./images/staff/thijs.jpg')
+        .staffname
+          | Thijs Tel
+      #staffbox2.staffbox
+        .staffboxphoto
+          img(src='./images/staff/thijs_big.jpg')
+        .staffdescription
+          span.subtitle Thijs Tel
+          p
+            | Thijs is one of the co-founders of the NYCDB and is responsible for the quality control of all beers that leave our brewery. Together with Lindsey he is also in charge of web development and promotion.
+    // Footer
+    #footer
+      .socialmedia
+        a(href='http://www.facebook.com/NYCDB')
+          img(src='./images/social/facebook.png')
+        a(href='http://www.twitter.com/NYCDB')
+          img(src='./images/social/twitter.png')
+        a(href='http://www.deliveroo.nl')
+          img(src='./images/social/deliveroo.png')
+      #customerquotes
+        #quote1.customerquote
+          p.quote
+            | The HTML beer is definitely one of the best pilsners I've ever tasted in my life!
+          p.customername Zach Feldman
+        #quote2.customerquote
+          p.quote I love the way the jQuery ale comes with a sophisticated opening mechanism.
+          p.customername Jon Miller
